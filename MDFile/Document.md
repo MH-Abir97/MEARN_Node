@@ -5,9 +5,10 @@
  * ng new  AngularWithNode
 ### Express Install
  * npm i express
+ * npm i body-parser
  ### Mongoose Install
   * npm i mongoose@6.11.1
-  
+
 
 
 

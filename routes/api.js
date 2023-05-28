@@ -46,18 +46,18 @@ router.patch('/update/:id',(req,res)=>{
       if(error){
           console.log(error);
       }else{
-        res.status("Update Successfully !!!");
+        res.status(200).send(userData);
       }
   })
 });
 
-router.delete('remove/:id',(req,res)=>{
+router.delete('/remove/:id',(req,res)=>{
   var Id=req.params.id;
   userModel.findByIdAndDelete(Id, (error)=>{
     if(error){
         console.log(error);
     }else{
-        res.status("Delete Successfully !!!");
+      res.status(200).send("Delete Successfully !!!!");
     }
 })
 })
